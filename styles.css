@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+}
+body{
+    background-image: linear-gradient(rgb(248, 211, 244),rgb(231, 86, 200));
+}
+.img{
+    background-image: url('./drum_bg.jpg');
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    /* background-position: center; */
+    filter: blur(7px);
+}
+h1{
+    position:absolute;
+    text-align: center;
+    top:10%;
+    /* border:5px solid green; */
+    width:40%;
+    left:30%;
+    right:30%;
+    color:rgb(43, 50, 58);
+    font-family: cursive;
+	text-shadow: 4px 0 #DA0463;
+    font-size:3rem;
+    background-color: rgba(209, 177, 186, 0.4);
+    /* backdrop-filter: blur(10px); */
+}
+.button-container{
+    /* border:4px solid red; */
+    position:absolute;
+    top:40%;
+    width:92%;
+    left:4%;
+    right:4%;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.button{
+    background-color: #DA0463;
+    outline: none;
+	border: 6px solid #6991e7;
+	background-image:  linear-gradient(rgb(236, 236, 236),rgb(216, 112, 193));
+	font-size: 2.4rem;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height:1;
+	font-weight: 700;
+	color: #ff07b5;
+	text-shadow: 3px 0 #949494;
+	border-radius: 15px;
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	margin: 10px;
+    padding-left: 4px;
+}
+.animation{
+    opacity:0.5;
+    box-shadow: 1px 4px 4px 0 #ffffff;
+
+}
+.w{
+    background-image: url(./cymbal.jpg);
+    background-size: cover;
+}
+.a{
+    background-image: url(./drumKick.jpg);
+    background-size: cover;
+}
+.s{
+    background-image: url(./snareHit.jpg);
+    background-size: cover;
+}
+.d{
+    background-image: url(./tom-1.jpg);
+    background-size: cover;
+}
+.j{
+    background-image: url(./tom-2.jpg);
+    background-size: cover;
+}
+.k{
+    background-image: url(./tom-3.jpg);
+    background-size: cover;
+}
+.l{
+    background-image: url(./tom-4.jpg);
+    background-size: cover;
+}
+
+@media (max-width:380px) {
+    .img{
+        height:150vh;
+    }
+    h1{
+        width:90%;
+        left:5%;
+        right:5%;
+        /* border:5px solid yellow; */
+    }
+    .button-container{
+        top:35%;
+        /* border:2px solid green; */
+    }
+    .button:nth-child(odd){
+        margin-right:5px;
+        margin-left: 10px;
+    }
+}
+@media (min-width:370px) and (max-width: 415px)
+{
+    .img{
+        height:150vh;
+    }
+    h1{
+        width:90%;
+        left:5%;
+        right:5%;
+    }
+    .button-container{
+        top:35%;
+        /* border:2px solid green; */
+    }
+    .button:nth-child(odd){
+        margin-right: 10%;
+        margin-left: 6%;
+    }
+}
